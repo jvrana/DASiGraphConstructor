@@ -2,7 +2,7 @@ import os
 import json
 
 import pytest
-from core.graph_constructor.models import ContigContainer
+from dasi.graph_constructor.models import ContigContainer
 from pyblast import JSONBlast
 
 

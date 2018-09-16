@@ -1,4 +1,4 @@
-from core.graph_constructor.models import BlastContig
+from dasi.graph_constructor.models import BlastContig
 
 def test_blast_contig_constructor(aligner):
     alignments = aligner.results.alignments

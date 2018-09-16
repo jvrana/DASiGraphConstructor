@@ -8,8 +8,8 @@ Description:
 
 '''
 import pytest
-from core.graph_constructor.models import Context, Region
-from core.graph_constructor.exceptions import RegionError
+from dasi.graph_constructor.models import Context, Region
+from dasi.graph_constructor.exceptions import RegionError
 
 
 def test_region_construction():

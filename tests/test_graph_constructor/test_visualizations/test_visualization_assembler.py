@@ -1,5 +1,5 @@
-from core.graph_constructor import Assembler
-from core.graph_constructor.models import schemas
+from dasi.graph_constructor import Assembler
+from dasi.graph_constructor.models import schemas
 import os
 import json
 

@@ -1,5 +1,5 @@
-from core.graph_constructor.models import BlastContig, ContigRegion, Context
-from core.graph_constructor.assembly import Assembly
+from dasi.graph_constructor.models import BlastContig, ContigRegion, Context
+from dasi.graph_constructor.assembly import Assembly
 
 def test_gap_cost_both_extendable():
     subject = ContigRegion(1, 100, Context(9795, True))

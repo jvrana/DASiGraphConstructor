@@ -9,6 +9,11 @@ networkx = "*"
 tqdm = "*"
 pyblast = {editable = true, path = "./../pyblast"}
 fire = "*"
+sqlalchemy = "*"
+flask = "*"
+graphene = "*"
+graphene-sqlalchemy = "*"
+flask-graphql = "*"
 
 [dev-packages]
 pandoc = "*"

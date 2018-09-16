@@ -1,4 +1,4 @@
-from core.graph_constructor.models import Contig, ContigContainer, ContigRegion
+from dasi.graph_constructor.models import Contig, ContigContainer, ContigRegion
 import re
 
 def test_find_perfect_matches():

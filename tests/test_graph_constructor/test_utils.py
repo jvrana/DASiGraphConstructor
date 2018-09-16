@@ -1,5 +1,5 @@
 import os
-from core.graph_constructor.utils import pseudocircularize
+from dasi.graph_constructor.utils import pseudocircularize
 from Bio import SeqIO
 
 

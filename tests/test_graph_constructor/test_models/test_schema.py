@@ -1,4 +1,4 @@
-from core.graph_constructor.models import schemas, Context, Region, Contig, ContigRegion
+from dasi.graph_constructor.models import schemas, Context, Region, Contig, ContigRegion
 from marshmallow import pprint
 
 def test_context_schema():

@@ -1,5 +1,5 @@
-from core.graph_constructor.models import Context, Region, ContigRegion, Contig
-from core.graph_constructor.exceptions import ContigError, RegionError
+from dasi.graph_constructor.models import Context, Region, ContigRegion, Contig
+from dasi.graph_constructor.exceptions import ContigError, RegionError
 import pytest
 from copy import copy
 
