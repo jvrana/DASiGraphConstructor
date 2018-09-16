@@ -1,22 +1,31 @@
 import React from 'react'
-import {Alert } from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import NavigationBar from './Nav'
 import {COPYRIGHT, SITE_NAME} from './../config'
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+
+import Home from "./Home";
+import NoServer from "./NoServer";
+import Sequences from "./Sequences";
 
 const AppLayout = () => {
-    return <div>
-        <Helmet titleTemplate={`%s - ${SITE_NAME}`}
-                defaultTitle={SITE_NAME}/>
-        <NavigationBar/>
-        <Alert bsStyle="warning">
-            <strong>Holy guacamole!</strong> Best check yo self, you're not looking too
-            good.
-        </Alert>;
-        <footer className="center">
-            Copyright {new Date().getFullYear()} {COPYRIGHT}
-        </footer>
-    </div>
+    return <BrowserRouter>
+        <div>
+            <Helmet titleTemplate={`%s - ${SITE_NAME}`}
+                    defaultTitle={SITE_NAME}/>
+            <NavigationBar/>
+            <main>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/noserver" component={NoServer}/>
+                    <Route exact path="/sequences" component={Sequences}/>
+                </Switch>
+            </main>
+            <footer className="center">
+                Copyright {new Date().getFullYear()} {COPYRIGHT}
+            </footer>
+        </div>
+    </BrowserRouter>
 };
 
 export default (props) => (

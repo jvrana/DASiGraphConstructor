@@ -1,19 +1,18 @@
 import {MenuItem, Nav, Navbar, NavDropdown, NavItem} from "react-bootstrap";
+
 import React from "react";
 
 const NavigationBar = () => {
     return <Navbar inverse collapseOnSelect>
         <Navbar.Header>
             <Navbar.Brand>
-                <a href="#brand">DASi</a>
+                <a href="/">DASi</a>
             </Navbar.Brand>
             <Navbar.Toggle/>
         </Navbar.Header>
         <Navbar.Collapse>
             <Nav>
-                <NavItem eventKey={1} href="#">
-                    Link
-                </NavItem>
+                <NavItem eventKey={1} href="sequences">Sequences</NavItem>
                 <NavItem eventKey={2} href="#">
                     Link
                 </NavItem>

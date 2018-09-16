@@ -13,7 +13,6 @@ const frontendPort = process.env.PORT || 3000;
 const backendPort = process.env.API_PORT || 5000;
 const backendHost = process.env.API_HOST || frontendHost;
 
-
 // bodyParser is needed just for POST.
 const app = express();
 app.use('/json', bodyParser.urlencoded({extended: true}), graphqlExpress({schema: schema}));
@@ -27,6 +26,7 @@ app.use('/api', proxy(`http://${backendHost}:${backendPort}`,
             return require('url').parse(req.url).path;
         }
     }));
+
 
 addDevMiddlewares(app, webpackConfig);
 

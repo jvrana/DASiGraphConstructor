@@ -41,6 +41,11 @@ const webpack =
                     }
                 },
                 {
+                  type: 'javascript/auto',
+                  test: /\.mjs$/,
+                  use: []
+                },
+                {
                     test: /\.(csv|tsv)$/,
                     use: {
                         loader: 'csv-loader'
