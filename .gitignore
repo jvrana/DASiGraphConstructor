@@ -205,4 +205,4 @@ venv.bak/
 # mkdocs documentation
 /site
 
-/idea/**/*
+.idea/**/*
