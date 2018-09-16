@@ -16,6 +16,7 @@
   "tests/test_models/test_schema.py::test_contig_container_schema": true,
   "tests/test_models/test_schema.py::test_contig_schema": true,
   "tests/test_models/test_schema.py::test_region_schema": true,
+  "tests/test_server/test_graphql/test_schema.py::test_createPrimerResults": true,
   "tests/test_server/test_schema.py::test_createPrimerResults": true,
   "tests/test_utils.py::test_pseudocircular": true
 }

@@ -3,7 +3,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const APP_ROOT = path.join(process.cwd(), 'frontend', 'app');
-// const appConfig = require(path.join(APP_ROOT, 'config'))
+const appConfig = require(path.join(APP_ROOT, 'config'));
 const STYLES_ROOT = path.join(APP_ROOT, 'styles');
 
 const htmlPlugin = new HtmlWebpackPlugin({
@@ -46,10 +46,10 @@ const webpack =
                         loader: 'csv-loader'
                     }
                 },
-                {
-                    test: /\.json$/,
-                    use: [{loader: 'json-loader'}],
-                },
+                // {
+                //     test: /\.json$/,
+                //     use: [{loader: 'json-loader'}],
+                // },
                 {
                     test: /\.(sass|scss)$/,
                     use: [
@@ -81,20 +81,5 @@ const webpack =
                     }
                 }
             ]
-        }
-        // module: {
-        //     loader: {
-        //         test: /\.jsx?$/,
-        //         exclude: /node_modules/,
-        //         loader: 'babel-loader',
-        //         query: {
-        //             presets: ['react']
-        //         }
-        //     }
-        // }
-
-        // resolve: {
-        //     modulesDirectories: ['node-modules'],
-        //     extensions: ['', '.js', '.jsx']
-        // }
+        },
     };

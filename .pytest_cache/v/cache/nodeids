@@ -1,11 +1,11 @@
 [
-  "tests/test_server/test_schema.py::test_allSequences",
-  "tests/test_server/test_schema.py::test_createSequence",
-  "tests/test_server/test_schema.py::test_createPrimer_using_formatter",
-  "tests/test_server/test_schema.py::test_createSequence_withFeature",
-  "tests/test_server/test_schema.py::test_run_with_pyblast",
-  "tests/test_server/test_schema.py::test_createResults",
-  "tests/test_server/test_schema.py::test_createPrimerResults",
-  "tests/test_server/test_schema.py::test_sequences",
-  "tests/test_server/test_schema.py::test_createResults_with_rc_sequence"
+  "tests/test_server/test_graphql/test_schema.py::test_allSequences",
+  "tests/test_server/test_graphql/test_schema.py::test_createSequence",
+  "tests/test_server/test_graphql/test_schema.py::test_createPrimer_using_formatter",
+  "tests/test_server/test_graphql/test_schema.py::test_createSequence_withFeature",
+  "tests/test_server/test_graphql/test_schema.py::test_run_with_pyblast",
+  "tests/test_server/test_graphql/test_schema.py::test_createResults",
+  "tests/test_server/test_graphql/test_schema.py::test_createPrimerResults",
+  "tests/test_server/test_graphql/test_schema.py::test_sequences",
+  "tests/test_server/test_graphql/test_schema.py::test_createResults_with_rc_sequence"
 ]
