@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 250px;
+        height: 100px;
+        padding: 2px;
+        font: 12px sans-serif;
+        background: lightsteelblue;
+        border: 0px;
+        border-radius: 8px;
+        pointer-events: none;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>DASi</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+    <div align='center' id="d3_selectable_force_directed_graph">
+        <h2>Assembly Graph</h2>
+        Scroll-wheel to zoom; click-and-drag to move
+        <svg width="800" height="500" display="block"></svg>
+    </div>
+    <script src="graph_viewer.js"></script>
+    <script>selectableForceDirectedGraph();</script>
+
+    <div align='center' id="d3_contig_viewer">
+        <h2>Contig Viewer</h2>
+        Hover to view contig
+        <svg width="1200" height="1800" display="block"></svg>
+    </div>
+    <script type="text/javascript" src="contig_viewer.js"></script>
+</body>
+</html>

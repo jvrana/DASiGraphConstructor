@@ -1,0 +1,3 @@
+[
+  "tests/test_graph_constructor/test_visualizations/test_visualization_assembler.py::test_cc_to_json"
+]

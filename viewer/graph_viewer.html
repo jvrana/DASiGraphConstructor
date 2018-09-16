@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.node .selected {
+  stroke: black;
+}
+
+.link {
+  stroke: #999;
+}
+
+.brush .extent {
+  fill-opacity: .1;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+    <div align='center' id="d3_selectable_force_directed_graph">
+        <h2>Assembly Graph</h2>
+        Scroll-wheel to zoom; click-and-drag to move
+        <svg width="800" height="500"></svg>
+    </div>
+<script src="http://d3js.org/d3.v4.min.js"></script>
+<script src="graph_viewer.js"></script>
+<script>selectableForceDirectedGraph();</script>
+</body>
