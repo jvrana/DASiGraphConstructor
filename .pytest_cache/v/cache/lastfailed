@@ -1,11 +1,10 @@
 {
   "core/graph_constructor/test_visualizations/test_visualization_assembler.py": true,
-  "tests/test_graph_constructor/test_assembler/test_assembler.py::test_dfs_iter": true,
-  "tests/test_graph_constructor/test_assembler/test_assembler.py::test_graph_init_pseudocircular": true,
-  "tests/test_graph_constructor/test_assembler/test_assembly.py::test_gap_cost_both_extendable": true,
-  "tests/test_graph_constructor/test_models/test_schema.py::test_context_schema": true,
-  "tests/test_graph_constructor/test_utils.py::test_pseudocircular": true,
+  "tests/test_graph_constructor/test_assembler/test_assembler.py::test_graph_init": true,
+  "tests/test_graph_constructor/test_models/test_schema.py::test_contig_container_schema": true,
+  "tests/test_graph_constructor/test_visualizations/test_visualization_assembler.py::test_assembler_vis": true,
   "tests/test_graph_constructor/test_visualizations/test_visualization_assembler.py::test_cc_to_csv": true,
+  "tests/test_graph_constructor/test_visualizations/test_visualization_assembler.py::test_cc_to_json": true,
   "tests/test_graph_constructor/test_visualizations/test_visualization_assembler.py::test_cc_to_json_pseudocircular": true,
   "tests/test_models/test_blast_contig.py::test_blast_contig_constructor": true,
   "tests/test_models/test_contig_container.py::test_contig_container_fixture": true,
@@ -16,7 +15,5 @@
   "tests/test_models/test_schema.py::test_contig_container_schema": true,
   "tests/test_models/test_schema.py::test_contig_schema": true,
   "tests/test_models/test_schema.py::test_region_schema": true,
-  "tests/test_server/test_graphql/test_schema.py::test_createPrimerResults": true,
-  "tests/test_server/test_schema.py::test_createPrimerResults": true,
   "tests/test_utils.py::test_pseudocircular": true
 }
