@@ -9,4 +9,4 @@ run:
 	pipenv run flask run
 
 populate:
-	pipenv run python cli.py --env "config.Testing" run --thread 1 - populate-database tests/testing_data/genbank_files
+	pipenv run python cli.py --env "config.Testing" - populate-database tests/testing_data/genbank_files --host "0.0.0.0" --port "5000"

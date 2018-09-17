@@ -20,14 +20,14 @@ class App(object):
         self.running = False
 
     def run(self, host="0.0.0.0", port=5000, thread=False):
+        self.host = host
+        self.port = port
         if thread:
             thread = threading.Thread(target=self.app.run, kwargs={'host': host, 'port': port})
             thread.daemon = True
             thread.start()
             self.running = True
             print(self.running)
-            self.host = host
-            self.port = port
             time.sleep(2)
             return self
         else:
@@ -77,8 +77,12 @@ class App(object):
                 "Could not connect to parsing_service at {}:{}. Are you sure its running?".format(parser_host,
                                                                                                   parser_port))
 
-    def _create_sequence(self, data):
-        url = "http://{}:{}/graphql".format(self.host, self.port)
+    def _create_sequence(self, data, host=None, port=None):
+        if host is None:
+            host = self.host
+        if port is None:
+            port = self.port
+        url = "http://{}:{}/graphql".format(host, port)
         print(url)
         fields = """
                 sequence {
@@ -114,7 +118,7 @@ class App(object):
         headers = {"content-type": "application/json"}
         return requests.post(url, data=json.dumps(payload), headers=headers)
 
-    def populate_database(self, directory):
+    def populate_database(self, directory, host, port):
         sequences = []
         print(directory)
         print(glob(os.path.join(directory, "*.gb")))
@@ -124,7 +128,7 @@ class App(object):
                 seq = res.json()['data']['tojson']['parsedSequence']
                 sequences.append(seq)
         for seq in sequences:
-            self._create_sequence(seq)
+            self._create_sequence(seq, host, port)
             print(res.json())
 
 

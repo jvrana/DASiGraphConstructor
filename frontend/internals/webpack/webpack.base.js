@@ -44,7 +44,7 @@ const webpack =
                   type: 'javascript/auto',
                   test: /\.mjs$/,
                   use: []
-                },
+                }, // necessary to import apollo-boost
                 {
                     test: /\.(csv|tsv)$/,
                     use: {
